@@ -32,7 +32,7 @@ def main():
     # 21f022139807e85fdc75f4a0336dad25843e4675b45981a992149ee32a4f51f9
     # 3be2f15944e39065963ccfe78004b4de2a88228b880d4a08f9bf6e1a0f40f2ab
     # 81689dc62d6c90e7cab2a8bf79dfd51c8e6a892c873e4264611a40dbeb13d953
-    #d385642b7400efd636e3f53ea6847677a65952343d611ef31fdcbdef7a3e80d5
+    # d385642b7400efd636e3f53ea6847677a65952343d611ef31fdcbdef7a3e80d5
 
     transactionid = str(sys.argv[1])
     transaction = get_transaction(transactionid)
