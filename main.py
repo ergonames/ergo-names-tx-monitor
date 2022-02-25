@@ -34,16 +34,19 @@ def main():
     # 81689dc62d6c90e7cab2a8bf79dfd51c8e6a892c873e4264611a40dbeb13d953
     #d385642b7400efd636e3f53ea6847677a65952343d611ef31fdcbdef7a3e80d5
 
-    txId = str(sys.argv[1])
-    transaction = get_transaction(txId)
+    transactionid = str(sys.argv[1])
+    transaction = get_transaction(transactionid)
     
     blockid = get_transaction_blockid(transaction)
     inclusionHeight = get_transaction_inclusion_height(transaction)
     confirmations = get_transaction_confirmations(transaction)
     
-    print(blockid)
-    print(inclusionHeight)
-    print(confirmations)
+    print()
+    print("Transaction ID\t\t" + str(transactionid))
+    print("Block ID\t\t" + str(blockid))
+    print("Inclusion Height\t" + str(inclusionHeight))
+    print("Confirmation\t\t" + str(confirmations))
+    print()
 
 if __name__=="__main__":
     main()
