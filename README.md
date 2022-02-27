@@ -4,7 +4,7 @@
 
 To run enter
 
-```python
+```
 python3 main.py {transactionId}
 ```
 
