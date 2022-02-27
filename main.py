@@ -17,14 +17,6 @@ def get_transaction_blockid(transaction):
     blockid = transaction['blockId']
     return blockid
 
-def get_transaction_inclusion_height(transaction):
-    inclusionHeight = transaction['inclusionHeight']
-    return inclusionHeight
-
-def get_transaction_confirmations(transaction):
-    confirmations = transaction['numConfirmations']
-    return confirmations
-
 def main():
     
     # Transactions
@@ -38,15 +30,8 @@ def main():
     transaction = get_transaction(transactionid)
     
     blockid = get_transaction_blockid(transaction)
-    inclusionHeight = get_transaction_inclusion_height(transaction)
-    confirmations = get_transaction_confirmations(transaction)
-    
-    print()
-    print("Transaction ID\t\t" + str(transactionid))
-    print("Block ID\t\t" + str(blockid))
-    print("Inclusion Height\t" + str(inclusionHeight))
-    print("Confirmation\t\t" + str(confirmations))
-    print()
+
+    print(blockid)
 
 if __name__=="__main__":
     main()
