@@ -24,7 +24,8 @@ def get_transaction_blockid(transaction):
 def main():
 
     transactionid = str(sys.argv[1])
-    transaction = get_transaction(transactionid, "TESTNET")
+    networkType = str(sys.argv[2])
+    transaction = get_transaction(transactionid, networkType)
     
     blockid = get_transaction_blockid(transaction)
 

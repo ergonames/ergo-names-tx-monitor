@@ -7,17 +7,17 @@ Will return a box ID for a given transaction. Needs a transaction ID in order to
 To run enter
 
 ```
-python3 main.py {transactionId}
+python3 main.py {transactionId} {networkType}
 ```
 
-where {transactionId} is a the ID of a transaction on the Ergo blockchain.
+where {transactionId} is a the ID of a transaction on the Ergo blockchain and {networkType} is either MAINNET or TESTNET.
 
 ### Example
 
 Command to start the program:
 
 ```
-python3 main.py ceca8efce65ea3b54b4904e15bfb907b4a66d5d347d15b4e3b8b5b1a1fa5945d
+python3 main.py ceca8efce65ea3b54b4904e15bfb907b4a66d5d347d15b4e3b8b5b1a1fa5945d TESTNET
 ```
 
 Output:
