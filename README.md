@@ -1,5 +1,7 @@
 # Ergo Names Tx Monitor
 
+Will return a box ID for a given transaction. Needs a transaction ID in order to run.
+
 ### Use
 
 To run enter
